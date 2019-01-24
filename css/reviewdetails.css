@@ -1,0 +1,475 @@
+@charset "utf-8";
+/*****************背景搜索框**********************/
+.searchs{
+    text-align: center;
+    margin-top:-70px;
+}
+.search input{
+    width:40% !important;
+    margin-left:20%;
+}
+.form-control-feedback{
+    right:15px;
+}
+.find{
+    overflow: hidden;
+}
+.centers{
+    margin-left:20%;
+}
+.centers h6{
+    color:#fff;
+}
+/************社区问答**************/
+.question{
+    margin-top:40px;
+}
+/**************left******************/
+.choice{
+    text-align: right;
+}
+.choice span{
+    display:inline-block;
+    padding:4px;
+    cursor:pointer;
+    font-size: 14px;
+}
+.choice b{
+    height:5px;
+    border:1px solid #767676;
+    margin-left:10px;
+    margin-right:10px;
+
+}
+.current{
+    color:#000;
+    border-radius:2px;
+    color:#00BCED;
+}
+/**************IE8兼容圆角头像****************/
+.divcss5{
+    width:50px;
+    height:50px;
+    overflow:hidden;
+    float: left;
+}
+.divcss5 img{
+    border-radius:50%;
+    -moz-border-radius:50%;
+    -webkit-border-radius:50%;
+    -moz-box-shadow:0px 4px 5px #9C9C9C;
+    -webkit-box-shadow:0px 4px 5px #9C9C9C;
+    box-shadow:0px 4px 5px #9C9C9C;
+    behavior: url(../PIE.htc);
+}
+.divcss4{
+    width:50px;
+    height:50px;
+    overflow:hidden;
+    float: left;
+}
+.divcss4 img{
+    border-radius:50%;
+    -moz-border-radius:50%;
+    -webkit-border-radius:50%;
+    -moz-box-shadow:0px 4px 5px #9C9C9C;
+    -webkit-box-shadow:0px 4px 5px #9C9C9C;
+    box-shadow:0px 4px 5px #9C9C9C;
+    behavior: url(../PIE.htc);
+}
+.circles{
+     overflow: hidden;
+     padding-left: 12%;
+     border-bottom:2px solid #18171C;
+ }
+.circle{
+    margin-top:20px;
+}
+/***************结束************************/
+.mid{
+    border-left:2px solid #18171C;
+    border-right:2px solid #18171C;
+}
+.circles div{
+    margin-top:30px;
+    margin-bottom: 30px;
+}
+.user_names{
+    margin-left:10px;
+    margin-top:5px;
+}
+.user_names span{
+    line-height: 25px;
+}
+.user{
+    margin-top:5px;
+}
+.response span{
+    line-height: 30px;
+}
+.critic{
+    padding-left:10px;
+    padding-right:10px;
+}
+.ctn_title{
+    color:#00B4E5;
+    font-size: 16px;
+    margin-bottom: 10px;
+    margin-top:20px;
+}
+.ctn_title ul{
+    margin-bottom: 20px;
+}
+.circle{
+    overflow: hidden;
+}
+.user_name{
+    margin-top: 15px;
+    margin-left: 10px;
+}
+.ctn_title ul{
+    overflow: hidden;
+}
+.about{
+    text-align: center;
+    background-color:#E1EDF9;
+    padding:10px;
+
+}
+.course-list li {
+    margin-bottom: 3px;
+    *background: #f7faf9;
+    *border-bottom: 2px solid #f7faf9;
+    border-radius: 0 0 1px 1px;
+    position: relative;
+    -moz-transition: box-shadow 0.3s;
+    -webkit-transition: box-shadow 0.3s;
+    -o-transition: box-shadow 0.3s;
+    transition: box-shadow 0.3s;
+}
+.js-course-lists{
+    display: inline-block;
+    width:100%;
+}
+
+.course-list li .course-list-img {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    *display: inline;
+    *zoom: 1;
+}
+.course-list li .course-list-img img {
+    display: block;
+    width: 100%;
+    transition: 1s;
+    -moz-transition: 1s;
+    -webkit-transition: 1s;
+    -o-transition: 1s;
+}
+.course-list li h5 {
+    color: #0AA9E3;
+    text-align: left;
+    padding-left: 10px;
+    font-size: 16px;
+    line-height: 30px;
+    margin-top:0;
+}
+.ctn_title h5{
+    color:#00B4E5;
+    font-size: 16px;
+    margin-bottom: 10px;
+    margin-top:20px;
+}
+.ctn_title div{
+    margin-bottom: 10px;
+}
+.ctn_title div span{
+    color:#ABABAB;
+    font-size: 14px;
+}
+.ctn_title{
+    padding-bottom: 10px;
+    border-bottom:1px solid #E2E2E2;
+    margin-bottom: 10px !important;
+}
+.f_1{
+    margin-left:10px;
+}
+.f_2{
+    margin-left:20px;
+}
+.resp{
+    background-color: #F4F4F4;
+    margin-top:10px;
+    margin-bottom: 10px !important;
+    height:40px;
+}
+
+.resp span{
+    display: inline-block;
+    padding:10px 0px 10px 0px;
+}
+.f_3{
+    margin-left:30px;
+}
+.times{
+    margin-left:40px;
+    margin-top: 15px;
+}
+.time{
+    margin-left:40px;
+    margin-top: 5px;
+    margin-right:40px;
+}
+.hd span{
+   color:#898BA4;
+    font-size: 12px;
+}
+.repeats_two{
+    border:1px solid #E6E6E6;
+    margin-top:-4px;
+    padding:10px 0 20px 20px;
+    border-bottom: 1px solid #E6E6E6;
+}
+.repeats_three{
+    border:1px solid #E6E6E6;
+    margin-top:-28px;
+    padding:10px 0 20px 40px;
+    background-color: #fff;
+}
+.l{
+    float: left;}
+.course-list .tips span {
+    color: #787d82;
+}
+.course-list li .tips {
+    font-size: 12px;
+    color: #b4bbbf;
+}
+.course-list li .tips {
+    font-size: 12px;
+    color: #b4bbbf;
+}
+.course-list li .tips {
+    font-size: 12px;
+    color: #b4bbbf;
+}
+.course-list li .tips {
+    font-size: 12px;
+    color: #b4bbbf;
+    text-align: left;
+    padding-top:10px;
+    padding-bottom: 10px;
+}
+.course-list .follow-label {
+    display: block;
+    position: absolute;
+    left: 15px;
+    top: 25px;
+    width: 46px;
+    height: 23px;
+    line-height: 23px;
+    padding-bottom: 5px;
+    font-size: 12px;
+    color: #fff;
+    text-align: center;
+}
+.text-ellipsis{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.course-list .tips p {
+    margin:8px;
+    color:#303030;
+}
+.img_cit{
+    padding-bottom: 10px;
+    margin-right: 10px;
+    border-bottom: 1px solid #E6E6E6;
+}
+
+.imgs_cit{
+    padding-bottom: 10px;
+    border-bottom: 1px solid #E2E2E2;
+    margin-right: 10px;
+    height:25px;
+}
+.num_title{
+    border:1px solid #E6E6E6;
+    height:40px;
+}
+.num_title span{
+    display: inline-block;
+    line-height: 40px;
+    padding-left:10px;
+}
+.crit{
+    text-align: right;
+    margin-top:10px;
+    margin-bottom: 10px;
+}
+.ans{
+    margin-top:20px;
+    margin-bottom: 20px;
+}
+/***********页脚************************/
+.pageIt_a{
+    display:inline-block;
+    text-align: center;
+    pading-left:15px;
+    height:30px;
+    color:#000;
+    width:60px;
+    border-radius: 10%;
+    border:1px solid #ddd;
+    line-height: 30px;
+    margin-left: 5px;
+    margin-right: 5px;
+    text-decoration:none
+}
+.pageIt_a:hover{
+    text-decoration:none;
+    color:#00B4FA;
+}
+.pageIt_c{
+    color:#00B4FA;
+}
+/*******************right************************/
+.mydiv {
+    float: left;
+    margin-top: 5px;
+    margin-right: 10px;
+    border: 1px solid #00B4FA;
+    width: 10px;
+    height: 10px;
+    background-color: #00B4FA;
+}
+.rt{
+    padding-left:30px !important;
+}
+.rt li{
+    height:46px;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+}
+.img{
+    margin-top:30px;
+}
+.select li:hover{
+    cursor: pointer;
+}
+.select b{
+    height:5px;
+    border:2px solid #797979;
+    margin-right:10px;
+    margin-left:10px;
+}
+.s_act{
+    color:#00BAEF !important;
+}
+.tit{
+    overflow: hidden;
+}
+.lf_padding{
+    padding-left:15px;
+}
+.questions{
+
+}
+.response span{
+    line-height: 30px;
+}
+.critic{
+    padding-left:10px;
+    padding-right:10px;
+
+}
+input{
+    list-style-type: none;
+    outline:none;
+    border:none;
+    width: 100%;
+    height: 40px;
+    padding-left: 10px;
+    border: 1px solid #999999;
+    margin-top:10px;
+    margin-bottom: 10px;
+}
+input:focus {
+    outline: none;
+    border: 1px solid #999999;
+}
+textarea{
+    list-style-type: none;
+    outline:none;
+    height: 40px;
+    padding-left: 10px;
+    border: 1px solid #E5E5E5;
+    margin-top:10px;
+    margin-bottom: 10px;
+}
+textarea:focus {
+    outline: none;
+    border-color:#999999 !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+}
+
+.img_cit div{
+    text-align: right;
+}
+.sub{
+    background-color:#fff;
+    border: none;
+    color:#707070;
+}
+.sub:hover{
+    background-color:#fff;
+    border: none;
+    color:#707070;
+}
+.sub:active{
+    background-color:#fff;
+    border: none !important;
+    color:#707070;
+}
+/**************模态框*************************/
+#myModalLabel{
+    margin-left: 10%;
+}
+.modal-header{
+    padding-bottom: 0;
+}
+.js-course-lists .img_cit .critic:hover{
+    cursor: pointer;
+}
+.img_cit img{
+    width:20px;
+}
+#sdd{
+    width: 80%;
+    height: 70px;
+    margin-left: 10%;
+}
+.questions ul li:hover{
+    cursor: pointer;
+}
+#sd{
+    width: 80%;
+    height: 180px;
+    margin-left: 10%;
+}
+.modal-body span{
+    margin-left:10%;
+    display:inline-block;
+    line-height: 30px;
+}
+.modal-footer {
+    text-align: center;
+}
+
+
+

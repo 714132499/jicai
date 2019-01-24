@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>社区问答</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/reviewdetails.css">
+    <script  src="js/jquery-1.11.2.min.js" type="text/javascript"></script>
+    <script  src="js/bootstrap.js" type="text/javascript"></script>
+    <script src="js/underscore.js" type="text/javascript"></script>
+    <script src="js/ajax.js" type="text/javascript"></script>
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+<body>
+<!---------------------导航------------------------------------->
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <img  class="pull-left" src="images/index/logo.png" alt="">
+        <ul class="pull-left nav navbar-nav">
+            <li class="tabs-back pull-left"><a href="indexs.html">首页</a></li>
+            <li class="tabs-back pull-left"><a href="goggle.html">API接口</a></li>
+            <li class="tabs-back pull-left"><a href="information.html">行业资讯</a></li>
+            <li class="tabs-front pull-left"><a href="community.html">社区问答</a></li>
+        </ul>
+        <ul class="pull-right login">
+            <li class="pull-right"><a href="register.html">登录</a></li>
+            <li class="pull-right register"><a href="login.html">注册</a></li>
+        </ul>
+    </div>
+</nav>
+<!------------------------------背景图-------------------------------->
+<div class="container title">
+    <img class="img-responsive center-block" src="images/information/banner.jpg" alt="">
+</div>
+<div class="container searchs">
+    <div class="form-group has-feedback find">
+        <div class="centers col-md-6">
+            <span class="glyphicon glyphicon-search form-control-feedback"></span>
+            <input type="text" class="form-control"  name="search" placeholder="找问题、答案、技术大牛" autofocus>
+            <h6>API接口、开发服务、免费咨询服务</h6>
+        </div>
+    </div>
+</div>
+<!--------------------社区问答--------------------------->
+<div class="container question">
+    <div id="container">
+        <div class="container clearfix questions">
+            <div class="row">
+                <div class=" col-xs-8 col-sm-8 col-md-8">
+                    <div>
+                        <ul class="list-unstyled">
+                            <li class="course-one ctn_title">
+                                <h5>
+                                    <span><%= title %></span>
+                                </h5>
+                                <div>
+                                    <span class="f_1">解答</span>
+                                    <span>(</span>
+                                    <span>2</span>
+                                    <span>)</span>
+                                    <span class="f_2">查看</span>
+                                    <span>(</span>
+                                    <span>2</span>
+                                    <span>)</span>
+                                </div>
+                            </li>
+                            <li class="response">
+                                <div class="tips">
+                                    <p class="text-ellipsis"><%= content %></p>
+                                </div>
+                            </li>
+                            <li class="resp">
+                                <span class="f_3">2</span><span>个解答</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="course-zz">
+                        <div class="course-list">
+                            <div id="pagingList" class="js-course-lists">
+                                <ul class="list-unstyled detail col-xs-12 col-sm-12 col-md-12">
+                                </ul>
+                            </div>
+
+                        </div>
+                        <div class="course-tool-ba clear">
+                        </div>
+                        <div class="container-content"></div>
+                        <div class="form-group">
+                            <textarea class="form-control" rows="3" maxlength="=70" placeholder="请填写您的答案!"></textarea>
+                            <button type="button" class="btn pull-right ans btn-primary">提交答案</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="questions col-xs-3 col-sm-3 col-md-3 col-md-offset-1">
+                    <ul class="list-unstyled rt">
+                        <li>
+                            <span>热门资讯/HotNews</span>
+                        </li>
+                        <li>
+                            <div class="mydiv"></div><span class="n_lists">可视对讲卡萨进度大所多萨顶顶多多多多多看撒娇的撒sad撒多大所多萨顶顶多多多多多撒多撒多</span>
+                        </li>
+                        <li>
+                            <div class="mydiv"></div><span class="n_lists">可视对讲大所多萨顶顶多多多多多卡萨进度看撒娇的撒sad撒多撒多撒多</span>
+                        </li>
+                        <li>
+                            <div class="mydiv"></div><span class="n_lists">可视对讲卡萨进度看撒娇的撒大所多萨顶顶多多多多多sad撒多撒多撒多</span>
+                        </li>
+                        <li>
+                            <div class="mydiv"></div><span class="n_lists">可视对讲卡萨进度大所多萨顶顶多多多多多看撒娇的撒sad撒多撒多撒多</span>
+                        </li>
+                        <li>
+                            <div class="mydiv"></div><span class="n_lists">可视对大所多萨顶顶多多多多多讲卡萨进度看撒娇的撒sad撒多撒多撒多</span>
+                        </li>
+                        <li>
+                            <div class="mydiv"></div><span class="n_lists">可视对讲卡大所多萨顶顶多多多多多萨进度看撒娇的撒sad撒多撒多撒多</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!------------------底部信息---------------------------->
+<div class="footer container">
+    <div class="foots col-xs-10 col-sm-10 col-md-10 col-md-offset-2">
+        <ul class="list-unstyled pull-left">
+            <li>
+                <h4>关于我们</h4>
+            </li>
+            <li>
+                <a href="">API接口</a>
+            </li>
+        </ul>
+        <ul class="list-unstyled pull-left">
+            <li>
+                <h4>社区问答</h4>
+            </li>
+            <li>
+                <a href="">最新问答</a>
+            </li>
+        </ul>
+        <ul class="list-unstyled pull-left">
+            <li>
+                <h4>关注我们</h4>
+            </li>
+            <li>
+                <img src="images/index/ticai.png" alt="">
+            </li>
+        </ul>
+        <ul class="list-unstyled pull-left">
+            <li>
+                <h4>新闻资讯</h4>
+            </li>
+            <li>
+                <a href="">行业资讯</a>
+            </li>
+        </ul>
+        <ul class="list-unstyled pull-left">
+            <li>
+                <h4>联系我们</h4>
+            </li>
+            <li>
+                <span>400-120-4784</span>
+            </li>
+        </ul>
+    </div>
+    <div class="btm">
+            <span>郑州沙僧科技有限公司&nbsp;&copy;&nbsp;版权所有&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;豫ICP备14006450号-3
+            增值电信业务经营许可证：豫B2-20140496
+            </span>
+    </div>
+</div>
+</body>
+<!--模板-->
+<script type = "type/template" id = "mainlist-template">
+    <li class="circle">
+        <div class="divcss5" class="pull-left" >
+            <img src="" width="50" height="50"/>
+        </div>
+        <div class="pull-left user_name">
+            <span class="n_lists"><%= name %></span>
+        </div>
+        <div class="pull-left times">
+            <span>2017-09-08</span>
+        </div>
+    </li>
+    <li class="response">
+        <div class="tips">
+            <p class="text-ellipsis"></p>
+        </div>
+    </li>
+    <li class="img_cit">
+        <img  src="images/index/pinlun.png" alt=""><span class="critic crt">评论</span><span>2</span>
+    </li>
+    <li>
+        <div class="crit" style="display: none" >
+            <input type="text"  id="rewords" name="username" placeholder="评论">
+            <button type="button" class="btn sub ">取消</button>
+            <button type="button" class="btn cancel btn-primary">评论</button>
+        </div>
+    </li>
+    <li class="num_title">
+        <span>153</span><span>条评论</span>
+    </li>
+    <!------------------第三方回复------------------------>
+    <li class="repeats_two">
+        <ul class="repeat_two list-unstyled">
+            <li class="circle">
+                <div class="divcss4" class="pull-left" >
+                    <img src="" width="30" height="30"/>
+                </div>
+                <div class="pull-left user">
+                    <span class="n_lists"><%= name %></span>
+                </div>
+            </li>
+            <li class="response">
+                <div class="tips s_tips">
+                    <p class="text-ellipsis"></p>
+                </div>
+            </li>
+            <li class="img_cit hd">
+                <img  src="images/index/pinlun.png" alt=""><span id="crict" class="critic">回复</span><span>0</span>
+                <span class="pull-right tm">2017-09-08</span>
+                <div class="reword" style="display:none;">
+                    <input type="text"  name="username" placeholder="回复评论">
+                    <button type="button" class="btn subs ">取消</button>
+                    <button type="button" class="btn cancel ">回复</button>
+                </div>
+            </li>
+        </ul>
+    </li>
+</script>
+<script src = "js/revie.js"></script>
+<script>
+    $("div#tab li").click(function(){
+        // 获取点击的是第几个按钮
+        //var i = $(this).index();
+        //alert(i);
+        // 把原来选中的取消选中状态
+        // 把原来选中的取消选中状态
+        $(".tabs-front").removeClass("tabs-front").addClass("tabs-back");
+        // 切换点击的按钮的样式为选中状态
+        $(this).removeClass("tabs-back").addClass("tabs-front");
+    });
+    $(function () { $('#myModal').on('hide.bs.modal', function () {
+        alert('把我关了吧...');})
+    });
+    //对动态添加的元素添加事件-删除
+    $(".js-course-lists .detail").on("click","#crict",function(){
+        $(".reword").show();
+    });
+    $(".js-course-lists .detail").on("click",".subs",function(){
+        $(".reword").hide();
+    });
+    $(".js-course-lists .detail").on("click",".crt",function(){
+        $(".crit").show();
+    });
+    $(".js-course-lists .detail").on("click",".sub",function(){
+        $(".crit").hide();
+    });
+
+</script>
+</html>
+

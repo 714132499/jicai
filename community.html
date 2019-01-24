@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>社区问答</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/community.css">
+    <script  src="js/jquery-1.11.2.min.js" type="text/javascript"></script>
+    <script  type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/underscore.js"></script>
+    <script type="text/javascript" src="js/ajax.js"></script>
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+<body>
+    <!---------------------导航------------------------------------->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <img  class="pull-left" src="images/index/logo.png" alt="">
+            <ul class="pull-left nav navbar-nav">
+                <li class="tabs-back pull-left"><a href="index.html">首页</a></li>
+                <li class="tabs-back pull-left"><a href="goggle.html">API接口</a></li>
+                <li class="tabs-back pull-left"><a href="information.html">行业资讯</a></li>
+                <li class="tabs-front pull-left"><a href="community.html">社区问答</a></li>
+            </ul>
+            <ul class="pull-right login">
+                <li class="pull-right"><a href="register.html">登录</a></li>
+                <li class="pull-right register"><a href="login.html">注册</a></li>
+                <li class="pull-right give"><a href="history.html">租用记录</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!------------------------------背景图-------------------------------->
+    <div class="container title">
+        <img class="img-responsive center-block" src="images/information/banner.jpg" alt="">
+    </div>
+    <div class="container searchs">
+        <div class="form-group has-feedback find">
+            <div class="centers col-md-6">
+                <span class="glyphicon glyphicon-search form-control-feedback"></span>
+                <input type="text" class="form-control"  name="search" placeholder="找问题、答案、技术大牛" autofocus>
+                <h6>API接口、开发服务、免费咨询服务</h6>
+            </div>
+        </div>
+    </div>
+    <!--------------------社区问答--------------------------->
+    <div class="container question">
+        <div class="title_img">
+            <img data-toggle="modal" data-target="#myModal" src="images/information/sub.png" alt="">
+        </div>
+        <div id="container">
+            <div class="container clearfix questions">
+                <div class="row">
+                    <div class=" col-xs-8 col-sm-8 col-md-8">
+                        <div class="course-nav-box">
+                            <div class="nav-container">
+                                <div class="level">
+                                    <div class="choice">
+                                        <span name = "all" class="current">所有问题</span><b></b>
+                                        <span name = "fe">精选问答</span><b></b>
+                                        <span name = "be">最新问答</span><b></b>
+                                        <span name = "mobile">我的收藏</span><b></b>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="course-zz">
+                            <div class="course-list">
+                                <div id="pagingList" class="js-course-lists">
+                                    <ul class="list-unstyled detail col-xs-12 col-sm-12 col-md-12">
+                                    </ul>
+                                </div>
+                                <div class="course-page-num clear">
+                                    <div class="pageCenter">
+                                        <div id="pageIt" ></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="course-tool-ba clear">
+                            </div>
+                            <div class="container-content"></div>
+                        </div>
+                    </div>
+                    <div class="questions col-xs-3 col-sm-3 col-md-3 col-md-offset-1">
+                        <ul class="list-unstyled rt">
+                            <li>
+                                <span>热门资讯/HotNews</span>
+                            </li>
+                            <li>
+                                <div class="mydiv"></div><span class="n_lists">可视对讲卡萨进度大所多萨顶顶多多多多多看撒娇的撒sad撒多大所多萨顶顶多多多多多撒多撒多</span>
+                            </li>
+                            <li>
+                                <div class="mydiv"></div><span class="n_lists">可视对讲大所多萨顶顶多多多多多卡萨进度看撒娇的撒sad撒多撒多撒多</span>
+                            </li>
+                            <li>
+                                <div class="mydiv"></div><span class="n_lists">可视对讲卡萨进度看撒娇的撒大所多萨顶顶多多多多多sad撒多撒多撒多</span>
+                            </li>
+                            <li>
+                                <div class="mydiv"></div><span class="n_lists">可视对讲卡萨进度大所多萨顶顶多多多多多看撒娇的撒sad撒多撒多撒多</span>
+                            </li>
+                            <li>
+                                <div class="mydiv"></div><span class="n_lists">可视对大所多萨顶顶多多多多多讲卡萨进度看撒娇的撒sad撒多撒多撒多</span>
+                            </li>
+                            <li>
+                                <div class="mydiv"></div><span class="n_lists">可视对讲卡大所多萨顶顶多多多多多萨进度看撒娇的撒sad撒多撒多撒多</span>
+                            </li>
+                        </ul>
+                    </div>
+                 </div>
+            </div>
+        </div>
+    </div>
+    <!-- 模态框（Modal） -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×
+                    </button>
+                    <h4 class="modal-title" id="myModalLabel">
+                        提问题
+                    </h4>
+                </div>
+                <div class="modal-body">
+                    <textarea name="anser" id="sdd" cols="30" rows="10" maxlength="70"  placeholder="问题标题，一句话描述问题，请以句号结尾"></textarea>
+                    <br> <span>问题描述（可选）</span>
+                    <textarea name="anser" id="sd" cols="30" rows="10"  placeholder=""></textarea>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">
+                        关闭
+                    </button>
+                    <button type="button" class="btn btn-primary">
+                        提交问题
+                    </button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+    <!------------------底部信息---------------------------->
+    <div class="footer container">
+        <div class="foots col-xs-10 col-sm-10 col-md-10 col-md-offset-2">
+            <ul class="list-unstyled pull-left">
+                <li>
+                    <h4>关于我们</h4>
+                </li>
+                <li>
+                    <a href="">API接口</a>
+                </li>
+            </ul>
+            <ul class="list-unstyled pull-left">
+                <li>
+                    <h4>社区问答</h4>
+                </li>
+                <li>
+                    <a href="">最新问答</a>
+                </li>
+            </ul>
+            <ul class="list-unstyled pull-left">
+                <li>
+                    <h4>关注我们</h4>
+                </li>
+                <li>
+                    <img src="images/index/ticai.png" alt="">
+                </li>
+            </ul>
+            <ul class="list-unstyled pull-left">
+                <li>
+                    <h4>新闻资讯</h4>
+                </li>
+                <li>
+                    <a href="">行业资讯</a>
+                </li>
+            </ul>
+            <ul class="list-unstyled pull-left">
+                <li>
+                    <h4>联系我们</h4>
+                </li>
+                <li>
+                    <span>400-120-4784</span>
+                </li>
+            </ul>
+        </div>
+        <div class="btm">
+            <span>郑州沙僧科技有限公司&nbsp;&copy;&nbsp;版权所有&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;豫ICP备14006450号-3
+            增值电信业务经营许可证：豫B2-20140496
+            </span>
+        </div>
+    </div>
+</body>
+<!--模板-->
+<script type = "type/template" id = "mainlist-template">
+    <li class="course-one ctn_title">
+        <ul class="list-unstyled">
+            <li  class="about list-unstyled col-xs-1 col-sm-1 col-md-1">
+                <span>回答</span><br>
+                <span>5</span>
+            </li>
+            <li  class="list-unstyled tti col-xs-11 col-sm-11 col-md-11">
+                <h5 onclick="window.location.href='reviewdetails.html'">
+                    <span><%= title %></span>
+                </h5>
+            </li>
+        </ul>
+    </li>
+    <li class="circle">
+        <div class="divcss5" class="pull-left" >
+            <img src="<%= image %>" width="50" height="50"/>
+        </div>
+        <div class="pull-left user_name">
+            <span class="n_lists"><%= name %></span>
+        </div>
+    </li>
+    <li class="response">
+        <div class="tips">
+            <p class="text-ellipsis"><%= content %></p>
+        </div>
+    </li>
+    <li class="img_cit">
+        <img  src="images/index/pinlun.png" alt=""><span class="critic">评论</span><span>0</span>
+        <img style="margin-left:20px;" src="images/index/shoucang.png" alt=""><span class="critic">收藏</span><span>0</span>
+    </li>
+</script>
+<script>
+    $("div#tab li").click(function(){
+        // 获取点击的是第几个按钮
+        //var i = $(this).index();
+        //alert(i);
+        // 把原来选中的取消选中状态
+        // 把原来选中的取消选中状态
+        $(".tabs-front").removeClass("tabs-front").addClass("tabs-back");
+        // 切换点击的按钮的样式为选中状态
+        $(this).removeClass("tabs-back").addClass("tabs-front");
+    });
+    //$(".page ul li").click(function(){
+
+    // });
+    //  $(".lists").click(function(){
+    //var i =  $(this).attr("name");
+    // alert(i);
+    //$("#aaa").attr("src",ifraUrl)
+    // var a= $("#aaa").attr("src");
+    // alert(a)
+
+    // });
+    //
+    /*$("div.js-course-lists ul li").click(function(){
+        var i =$(this).index();
+        alert(i);
+    });
+*/
+
+</script>
+<script src = "js/mainPart.js"></script>
+<script>
+    $(function () { $('#myModal').on('hide.bs.modal', function () {
+        alert('把我关了吧...');})
+    });
+
+</script>
+</html>
+

@@ -1,0 +1,198 @@
+@charset "utf-8";
+/**************导航*********************/
+.navbar{
+    background-color: #2A303C;
+    margin-bottom:0;
+    border:none;
+}
+.navbar img{
+    padding-top:10px;
+    padding-bottom:10px;
+    margin-right:10px;
+}
+.nav{
+    margin-top:3px;
+    margin-left:5px;
+}
+.nav li a{
+    color:#fff !important;
+    font-size:18px;
+}
+.tabs-front{
+    border-bottom:3px solid #fff;
+}
+.login{
+    margin-top:15px;
+    margin-left:5px;
+}
+.register{
+    padding-right:10px;
+}
+.give{
+    padding-left:10px;
+    padding-right:10px;
+}
+.carousel{
+    top: 56px;
+}
+.navbar{
+    background-color: #2A303C;
+    margin-bottom:0;
+    border:none;
+}
+.navbar img{
+    padding-top:10px;
+    padding-bottom:10px;
+    margin-right:10px;
+}
+.nav{
+    margin-top:3px;
+    margin-left:5px;
+}
+.register span{
+    color:#fff !important;
+    font-size: 14px;
+}
+.register a{
+    color:#00AEFF;
+    font-size: 14px;
+}
+.register a:hover{
+    text-decoration: none;
+}
+.main_title{
+    margin-top:80px;
+    text-align: center;
+    margin-left: -30px;
+}
+.main_title h3{
+    color: #666666;
+    margin-left: -160px;
+}
+.main_title span{
+    display: inline-block;
+    color: #ACACAC;
+    margin-left: -150px;
+}
+.ctn{
+   text-align: center;
+    margin-top:50px;
+}
+input{
+    list-style-type: none;
+    outline:none;
+    border:none;
+    width: 30%;
+    height: 40px;
+    padding-left: 10px;
+    border: 1px solid #999999;
+}
+input:focus {
+    outline: none;
+    border: 1px solid #999999;
+}
+.cods{
+    margin-left:2px;
+}
+#d,#rs,#r,#n{
+    display:inline-block;
+    width:140px;
+    color:#00AEFF;
+}
+.cod{
+    width:20%;
+
+}
+.btn{
+    width:10%;
+   background-color:#00AEFF;
+    height:40px;
+    border:1px solid #00AEFF;
+}
+.btn:hover{
+    background-color: #00AEFF;
+    border-color: #00AEFF;
+}
+.rad{
+    width:30%;
+    border:1px solid #00AEFF;
+    height:40px;
+    line-height: 40px;
+    margin-left:29%;
+    text-align: left;
+    padding-top:3px;
+
+}
+.rad input{
+    width: 25px;
+    height: 25px;
+   margin-left:10px;
+
+}
+.rad span{
+    vertical-align: middle;
+    line-height: 40px;
+    margin-top: -15px;
+    display: inline-block;
+}
+.span_lf{
+    padding-right:15px;
+    font-size: 16px;
+    color:#00AEFF;
+}
+.rad .span_rt{
+    font-size: 16px;
+    color:#666;
+}
+.about{
+    color:#00AEFF;
+}
+.check{
+    height:30px;
+    width:30%;
+    margin-left:25%;
+}
+.check input{
+    height:15px;
+    width: 15px;
+}
+.check  span{
+    vertical-align: middle;
+    line-height: 40px;
+    margin-top: -10px;
+    display: inline-block;
+}
+.submit{
+    width:30%;
+    margin-bottom: 30px;
+    margin-left:-145px;
+}
+/*****************密码设置***************************/
+.floor_1{
+    margin-top:80px;
+    border-bottom: 1px solid #E6E6E6;
+    width:100%;
+}
+.lf_select{
+    text-align: right;
+    margin-bottom: 30px;
+}
+.rt_select{
+    text-align: left;
+}
+.mid_select b{
+    display: inline-block;
+    width: 100%;
+    border: 1px solid #E7E7E7;
+    height: 0;
+    margin-top: 20px;
+}
+.active button{
+    border-radius: 50%;
+    background-color: #00AEFF;
+}
+.actives button{
+    border-radius: 50%;
+    background-color: #999999;
+    border:none;
+}

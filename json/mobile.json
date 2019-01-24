@@ -1,0 +1,33 @@
+﻿{"list":[
+
+    {"image":"images/index/latest-news-IMG1.jpg" ,"title":"你猜吧","content":"内容描述","name":"跑啊"}
+
+    {"datas":[{
+        "goggle":"接口介绍",
+        "number":"接口编号",
+        "inter":"网络协议",
+        "ziduan":"数据字段",
+        "limit":"请求限制",
+        "vip":"VIP服务",
+        "nam":"参数名",
+        "intr":"介绍",
+        "ways":"方式",
+        "selet":"选填",
+        "canzhi":"参数值",
+        "arear":"地区",
+        "garvenment":"机构",
+        "names":"名称",
+        "cnumber":"参数值",
+        "eplan":"说明",
+        "cunt":"当前期号",
+        "pric":"价格"}
+
+
+    ]}
+],
+    "names":[{"name":"所有问题","id":"all"},
+        {"name":"精选问答"      ,"id":"fe"},
+        {"name":"最新问答"   ,"id":"be"},
+        {"name":"我的收藏"    ,"id":"mobile"}
+    ]
+}

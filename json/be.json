@@ -1,0 +1,21 @@
+﻿{"list":[
+
+  {"image":"images/index/latest-news-IMG1.jpg" ,"title":"双色球","content":"内容描述内容描述内容描述内容描述内容描述内容描述内容描述内容描述","name":"陈小帅"},
+  {"datas":[{
+    "goggle":"地区",
+    "number":"机构",
+    "inter":"名称",
+    "ziduan":"参数值",
+    "limit":"说明",
+    "vip":"当前期号",
+    "pric":"价格"
+  }
+
+
+  ]}
+],
+  "names":[{"name":"API接口","id":"all"},
+    {"name":"API参数说明"      ,"id":"fe"},
+    {"name":"name参数说明"   ,"id":"be"}
+  ]
+}

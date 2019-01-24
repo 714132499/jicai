@@ -1,0 +1,111 @@
+@charset "utf-8";
+/************部分主题**************/
+.main_title{
+    margin-top:70px;
+    margin-bottom: 30px;
+
+}
+.titles{
+    border-bottom: 1px solid #dddddd;
+    padding-bottom: 20px;
+}
+.titles .span_1{
+    display: inline-block;
+    font-size:18px;
+    line-height: 30px;
+}
+.titles .span_2, .titles .span_3,.titles .span_4{
+    display: inline-block;
+    color:#676767;
+    line-height: 30px;
+}
+.titles .span_5,.titles .span_6{
+    color:#FB0005;
+    font-size: 20px;
+}
+.floor_one{
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+.floor_one .span_7{
+    display: inline-block;
+    font-size:18px;
+    line-height: 30px;
+}
+.floor_two{
+    background-color: #F4F4F4;
+    border:1px solid #E7EBEC;
+    overflow: hidden;
+    padding: 10px 0 10px 0;
+}
+.floor_two ul{
+    padding-top:10px;
+    overflow: hidden;
+}
+
+.floor_two ul li{
+    position: relative;
+ }
+.pay{
+    border:1px solid #29BBFF;
+}
+.select{
+    position: absolute;
+    padding-top:39px;
+    padding-left:10px;
+    left: 160px;
+    top:2px;
+    display:none;
+}
+.act{
+    position: absolute;
+    padding-top:39px;
+    padding-left:10px;
+    left: 160px;
+    top:2px;
+}
+.other_tit{
+    margin-top: 20px;
+   margin-bottom: 20px;
+}
+.other_tit span{
+    font-size: 16px;
+    line-height: 30px;
+}
+.span_8{
+    color:#F22E6E;
+}
+.pays{
+    border:1px solid #29BBFF;
+}
+.lists{
+    overflow: hidden;
+    text-align: center;
+}
+.lists ul{
+    overflow: hidden;
+}
+.lists ul li{
+    position: relative;
+    width:20%;
+    margin-bottom: 20px;
+}
+.selects{
+    position: absolute;
+    padding-top:39px;
+    padding-left:10px;
+    left: 156px;
+    top: -22px;
+    display:none;
+}
+.actives{
+    position: absolute;
+    padding-top:39px;
+    padding-left:10px;
+    left: 156px;
+    top: -22px;
+    display:inline-block;
+}
+.btn{
+    margin-left: 38px;
+}

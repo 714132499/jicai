@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>用户登录</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/register.css">
+    <script  src="js/jquery-1.11.2.min.js" type="text/javascript"></script>
+    <script  type="text/javascript" src="js/bootstrap.js"></script>
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+<body>
+<!---------------------导航------------------------------------->
+    <div class="container">
+        <div class="row">
+            <div class="lf col-xs-8 col-sm-8 col-md-8">
+                <img  class="lf_img img-responsive center-block" src="images/register/bgimg.png" alt="">
+            </div>
+            <div class="rt col-xs-3 col-sm-3 col-md-3">
+                <div class="logo">
+                    <img src="images/register/logo.png" alt="">
+                </div>
+                <div class="form-group has-feedback lists" style="margin-top:20px;height:70px;">
+                    <div class="form-group has-feedback">
+                        <img  class="glyphicon glyphicon-lock form-control-feedback"   src="images/register/zhanghu.png" alt="">
+                        <input type="text"  id="username" name="username" placeholder="用户名">
+                        <span id="n" class="pull-right"></span>
+                    </div>
+                </div>
+                <div class="form-group has-feedback">
+                    <div>
+                        <i></i>
+                        <img  class="glyphicon glyphicon-lock form-control-feedback" src="images/register/mima.png" alt="">
+                        <input type="password"  id="password" name="password" placeholder="密码">
+                    </div>
+                </div>
+                <div class="span_1" onclick="window.location.href='passwordset.html'">
+                    <span class="span_5">忘记密码</span>
+                </div>
+            </div>
+            <button type="button" class="btn register btn-primary">登录</button>
+            <br>
+             <span class="pull-right span_4" onclick="window.location.href='login.html'">立即注册</span>
+            <span class="pull-right span_3">还没有集彩账号，</span>
+        </div>
+    </div>
+
+</body>
+<script>
+    $("div#tab li").click(function(){
+        // 获取点击的是第几个按钮
+        //var i = $(this).index();
+        //alert(i);
+        // 把原来选中的取消选中状态
+        // 把原来选中的取消选中状态
+        $(".tabs-front").removeClass("tabs-front").addClass("tabs-back");
+        // 切换点击的按钮的样式为选中状态
+        $(this).removeClass("tabs-back").addClass("tabs-front");
+    });
+    /*****************************用户名验证***************************************/
+    $('#username').blur(function(){
+        var username = document.getElementById('username').value;
+        var regpwd =/^[0-9a-zA-Z_]{6,24}$/;; //正则表达式
+        //2：检测密码格式是否正确
+        if(username==''){
+            document.getElementById("n").innerHTML="用户名不能为空！";
+            return;
+        }else if(!regpwd.test(username)){
+            document.getElementById("n").innerHTML="用户名格式不正确";
+        }else{
+            document.getElementById("n").innerHTML="";
+            return;
+        }
+
+    });
+
+
+    var winWidth = 0;
+    var winHeight = 0;
+
+    {
+
+//获取窗口宽度
+
+     /*   if (window.innerWidth)
+
+            winWidth = window.innerWidth;
+
+        else if ((document.body) && (document.body.clientWidth))
+
+            winWidth = document.body.clientWidth;*/
+
+//获取窗口高度
+
+        if (window.innerHeight)
+
+            winHeight = window.innerHeight;
+
+        else if ((document.body) && (document.body.clientHeight))
+
+            winHeight = document.body.clientHeight;
+
+//通过深入Document内部对body进行检测，获取窗口大小
+
+        if (document.documentElement && document.documentElement.clientHeight && document.documentElement.clientWidth)
+
+        {
+
+            winHeight = document.documentElement.clientHeight;
+
+            winWidth = document.documentElement.clientWidth;
+
+        }
+
+//结果输出至两个文本框
+        $(".lf_img").css("height",winHeight);
+
+
+    }
+
+
+</script>
+
+</html>
+

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>API接口</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/goggle.css">
+    <script type="text/javascript" src="js/jquery-1.9.1.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <!--[if lt IE 9]>
+    <script src="js/ie8-responsive-file-warning.js"></script>
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<!---------------------导航------------------------------------->
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <img  class="pull-left" src="images/index/logo.png" alt="">
+        <ul class="pull-left nav navbar-nav">
+            <li class="tabs-back pull-left"><a href="index.html">首页</a></li>
+            <li class="tabs-front pull-left"><a href="goggle.html">API接口</a></li>
+            <li class="tabs-back pull-left"><a href="information.html">行业资讯</a></li>
+            <li class="tabs-back pull-left"><a href="community.html">社区问答</a></li>
+        </ul>
+        <ul class="pull-right login">
+            <li class="pull-right"><a href="register.html">登录</a></li>
+            <li class="pull-right register"><a href="login.html">注册</a></li>
+        </ul>
+    </div>
+</nav>
+<!------------------------------背景图-------------------------------->
+<div class="container title">
+    <img class="img-responsive center-block" src="images/goggle/banner.jpg" alt="">
+</div>
+<!-------------------------分类-------------------------------------------->
+<div class="container data">
+    <div class="ctn_list">
+        <ul class="list-unstyled">
+            <li class="col-xs-3 col-sm-3 col-md-3">
+                <img src="images/goggle/sq.png" alt="" onclick="window.location.href='goggledetail.html'">
+                <div>
+                    <span class="part_one" >双色球</span><br>
+                    <span class="part_two">双色球开奖数据API接口</span><br>
+                    <span class="part_three">1元/天，10元/月，100元/年</span><br>
+                </div>
+            </li>
+            <li class="col-xs-3 col-sm-3 col-md-3">
+                <img src="images/goggle/3D.png" alt="">
+                <div>
+                    <span class="part_one" >3D</span><br>
+                    <span class="part_two">3D开奖数据API接口</span><br>
+                    <span class="part_three">1元/天，10元/月，100元/年</span><br>
+                </div>
+            </li>
+            <li class="col-xs-3 col-sm-3 col-md-3">
+                <img src="images/goggle/3Dtry.png" alt="">
+                <div>
+                    <span class="part_one" >3D试机号</span><br>
+                    <span class="part_two">3D试机号开奖数据API接口</span><br>
+                    <span class="part_three">1元/天，10元/月，100元/年</span><br>
+                </div>
+            </li>
+            <li class="col-xs-3 col-sm-3 col-md-3">
+                <img src="images/goggle/seven.png" alt="">
+                <div>
+                    <span class="part_one" >七乐彩</span><br>
+                    <span class="part_two">七乐彩开奖数据API接口</span><br>
+                    <span class="part_three">1元/天，10元/月，100元/年</span><br>
+                </div>
+            </li>
+            <li class="col-xs-3 col-sm-3 col-md-3">
+                <img src="images/goggle/tou.png" alt="">
+                <div>
+                    <span class="part_one" >大乐透</span><br>
+                    <span class="part_two">大乐透开奖数据API接口</span><br>
+                    <span class="part_three">1元/天，10元/月，100元/年</span><br>
+                </div>
+            </li>
+            <li class="col-xs-3 col-sm-3 col-md-3">
+                <img src="images/goggle/san.png" alt="">
+                <div>
+                    <span class="part_one" >排列三</span><br>
+                    <span class="part_two">排列三开奖数据API接口</span><br>
+                    <span class="part_three">1元/天，10元/月，100元/年</span><br>
+                </div>
+            </li>
+            <li class="col-xs-3 col-sm-3 col-md-3">
+                <img src="images/goggle/wu.png" alt="">
+                <div>
+                    <span class="part_one" >排列五</span><br>
+                    <span class="part_two">排列五开奖数据API接口</span><br>
+                    <span class="part_three">1元/天，10元/月，100元/年</span><br>
+                </div>
+            </li>
+            <li class="col-xs-3 col-sm-3 col-md-3">
+                <img src="images/goggle/star.png" alt="">
+                <div>
+                    <span class="part_one" >七星彩</span><br>
+                    <span class="part_two">七星彩开奖数据API接口</span><br>
+                    <span class="part_three">1元/天，10元/月，100元/年</span><br>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+<!--------------------正在使用者--------------------------->
+<div class="container continue">
+    <div class="img">
+        <img src="images/index/data.png" alt="">
+    </div>
+    <div class="s_banner container">
+        <ul class="list-unstyled f_u">
+            <li class="col-xs-4 col-sm-4 col-md-4 first">
+                <ul  class="list-unstyled detail">
+                    <li class="users col-xs-6 col-sm-6 col-md-6">
+                        <img src="images/index/uesr.png" alt="">
+                    </li>
+                    <li class="details pull-left col-xs-6 col-sm-6 col-md-6">
+                        <span class="name">我是谁</span><br>
+                        <span class="phone">187***12345</span>
+                    </li>
+                </ul>
+            </li>
+            <li class="col-xs-4 col-sm-4 col-md-4 mid">
+                <ul  class="list-unstyled detail">
+                    <li class="users col-xs-6 col-sm-6 col-md-6">
+                        <img src="images/index/uesr.png" alt="">
+                    </li>
+                    <li class="details pull-left col-xs-6 col-sm-6 col-md-6">
+                        <span class="name">我是谁</span><br>
+                        <span class="phone">187***12345</span>
+                    </li>
+                </ul>
+            </li>
+            <li class="col-xs-4 col-sm-4 col-md-4 third">
+                <ul  class="list-unstyled detail">
+                    <li class="users col-xs-6 col-sm-6 col-md-6">
+                        <img src="images/index/uesr.png" alt="">
+                    </li>
+                    <li class="details pull-left col-xs-6 col-sm-6 col-md-6">
+                        <span class="name">我是谁</span><br>
+                        <span class="phone">187***12345</span>
+                    </li>
+                </ul>
+            </li>
+            <li class="col-xs-4 col-sm-4 col-md-4 first">
+                <ul  class="list-unstyled detail">
+                    <li class="users col-xs-6 col-sm-6 col-md-6">
+                        <img src="images/index/uesr.png" alt="">
+                    </li>
+                    <li class="details pull-left col-xs-6 col-sm-6 col-md-6">
+                        <span class="name">我是谁</span><br>
+                        <span class="phone">187***12345</span>
+                    </li>
+                </ul>
+            </li>
+            <li class="col-xs-4 col-sm-4 col-md-4 mid">
+                <ul  class="list-unstyled detail">
+                    <li class="users col-xs-6 col-sm-6 col-md-6">
+                        <img src="images/index/uesr.png" alt="">
+                    </li>
+                    <li class="details pull-left col-xs-6 col-sm-6 col-md-6">
+                        <span class="name">我是谁</span><br>
+                        <span class="phone">187***12345</span>
+                    </li>
+                </ul>
+            </li>
+            <li class="col-xs-4 col-sm-4 col-md-4 third">
+                <ul  class="list-unstyled detail">
+                    <li class="users col-xs-6 col-sm-6 col-md-6">
+                        <img src="images/index/uesr.png" alt="">
+                    </li>
+                    <li class="details pull-left col-xs-6 col-sm-6 col-md-6">
+                        <span class="name">我是谁</span><br>
+                        <span class="phone">187***12345</span>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>
+<!------------------底部信息---------------------------->
+<div class="footer container">
+    <div class="foots col-xs-10 col-sm-10 col-md-10 col-md-offset-2">
+        <ul class="list-unstyled pull-left">
+            <li>
+                <h4>关于我们</h4>
+            </li>
+            <li>
+                <a href="">API接口</a>
+            </li>
+        </ul>
+        <ul class="list-unstyled pull-left">
+            <li>
+                <h4>社区问答</h4>
+            </li>
+            <li>
+                <a href="">最新问答</a>
+            </li>
+        </ul>
+        <ul class="list-unstyled pull-left">
+            <li>
+                <h4>关注我们</h4>
+            </li>
+            <li>
+                <img src="images/index/ticai.png" alt="">
+            </li>
+        </ul>
+        <ul class="list-unstyled pull-left">
+            <li>
+                <h4>新闻资讯</h4>
+            </li>
+            <li>
+                <a href="">行业资讯</a>
+            </li>
+        </ul>
+        <ul class="list-unstyled pull-left">
+            <li>
+                <h4>联系我们</h4>
+            </li>
+            <li>
+                <span>400-120-4784</span>
+            </li>
+        </ul>
+    </div>
+    <div class="btm">
+            <span>郑州沙僧科技有限公司&nbsp;&copy;&nbsp;版权所有&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;豫ICP备14006450号-3
+            增值电信业务经营许可证：豫B2-20140496
+            </span>
+    </div>
+</div>
+</body>
+<script src="js/common.js"></script>
+<script src="js/goggle.js"></script>
+</html>

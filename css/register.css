@@ -1,0 +1,70 @@
+@charset "utf-8";
+/************部分主题**************/
+.container{
+    width: 100% !important;
+}
+.lf{
+    padding-left: 0;
+}
+.lf_img{
+    width: 100%;
+}
+
+.logo{
+    margin-top: 25%;
+}
+.lists{
+    margin-top:30px;
+}
+input{
+    list-style-type: none;
+    outline:none;
+    border:none;
+    width: 100%;
+    height: 40px;
+    padding-left: 40px;
+    border-bottom: 1px solid #e6e6e6;
+    margin-left:10px;
+}
+input:focus {  outline: none;
+   border-bottom: 1px solid #E6E6E6;
+    border-top:none;
+    border-left:none;
+    border-right:none;
+}
+.list div{
+    position: absolute;
+}
+.form-control-feedback{
+    right: 90%;
+}
+.register{
+    width: 25%;
+}
+.span_1,.span_4,.span_3{
+    text-align: right;
+    color:#00AFF5;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size:16px;
+}
+#n{
+    display: inline-block;
+    margin-top:10px;
+    color:#00AFF5;
+    font-size:16px;
+}
+.span_4,.span_3{
+    display: inline-block;
+    margin-top:10px;
+    color:#00AFF5;
+}
+.span_4{
+    padding-right:9%;
+}
+.span_3{
+    color:#626262;
+}
+.span_4,.span_5{
+    cursor: pointer;
+}

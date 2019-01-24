@@ -1,0 +1,99 @@
+@charset "utf-8";
+/************行业资讯**************/
+/**************left******************/
+.ctn_list{
+    overflow: hidden;
+}
+.ctn_list ul li{
+    overflow: hidden;
+}
+.ctn_list ul li img{
+    margin-top:30px;
+}
+.news{
+    margin-top:30px;
+}
+.news_list:hover{
+    cursor: pointer;
+}
+.news_list li{
+    margin-top:10px;
+    margin-bottom: 10px;
+}
+.news ul {
+    padding-left:0;
+    padding-right: 0;
+}
+.line_title span{
+    padding-left:15px;
+}
+.news_img{
+    text-align: center;
+}
+.r,rs{
+    float:left;
+}
+.t,.ts{
+    float:left;
+}
+.r,.t{
+    color:#989898;
+}
+.t{
+    margin-left:30px;
+}
+.rs,.ts{
+    color:#0BA5FB;
+}
+.rt{
+    border-left: 1px solid #E2E2E2;
+}
+.rt:hover{
+    cursor: pointer;
+}
+.rt span{
+    color:#616161;
+}
+.intr{
+    height: 50px;
+}
+
+.intr span {
+    display: inline-block;
+    /* height: 37px; */
+    padding-bottom: 5px;
+    line-height: 26px;
+
+}
+.intr span{position: relative; line-height: 28px; height: 50px;overflow: hidden;}
+.intr span:after{
+    content: "...";
+    position: absolute;
+    bottom: 0;
+    right: 0px;
+    padding-right: 27px;
+    background: -o-linear-gradient(right, transparent, #fff 55%);
+    background: -moz-linear-gradient(right, transparent, #fff 55%);
+    font-weight: bolder;
+    background-color: #fff;
+    padding-left: 5px;
+}
+/*******************right************************/
+.rt{
+    padding-left:30px !important;
+}
+.rt li{
+    height:46px;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+}
+.mydiv {
+    float: left;
+    margin-top: 5px;
+    margin-right: 10px;
+    border: 1px solid #00B4FA;
+    width: 10px;
+    height: 10px;
+    background-color: #00B4FA;
+}

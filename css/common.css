@@ -1,0 +1,70 @@
+/**************导航*********************/
+.navbar{
+    background-color: #2A303C;
+    margin-bottom:0;
+    border:none;
+}
+.navbar img{
+    padding-top:10px;
+    padding-bottom:10px;
+    margin-right:10px;
+}
+.nav{
+    margin-top:3px;
+    margin-left:5px;
+}
+.nav li a{
+    color:#fff !important;
+    font-size:14px;
+}
+.tabs-front{
+    border-bottom:3px solid #fff;
+}
+.login{
+    margin-top:15px;
+    margin-left:5px;
+}
+.login li a{
+    color:#fff !important;
+    font-size:14x;
+}
+.register{
+    padding-right:10px;
+}
+.give{
+    padding-left:10px;
+    padding-right:10px;
+}
+.carousel{
+    top: 56px;
+}
+/*****************背景图***********************/
+.title{
+    width:100% !important;
+    padding-left:0;
+    padding-right:0;
+    margin-top:55px;
+}
+/**************底部*********************/
+.footer{
+    width:100% !important;
+    background-color: #666666;
+    height:200px;
+    text-align: center;
+    padding-top:30px;
+}
+.foots{
+    overflow: hidden;
+}
+.footer ul{
+    width: 16%;
+}
+.footer ul li h4,.footer ul li a,.footer ul li span{
+    color:#fff;
+}
+.btm{
+    margin-top:10px;
+}
+.btm span{
+    color:#fff;
+}

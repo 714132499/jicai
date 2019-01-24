@@ -1,0 +1,73 @@
+@charset "utf-8";
+/********************背景图**************************/
+.bg_titles{
+    margin-top:80px;
+    margin-bottom: 30px;
+}
+.dtl{
+    margin-left:30px;
+    margin-top:10px;
+    color:#616161;
+}
+.dtl a{
+    display: inline-block;
+    height:30px;
+    border:1px solid #fff;
+    color:#616161;
+    line-height: 30px;
+    padding-left:10px;
+    padding-right:10px;
+}
+.dtl h4{
+    padding-left:15px;
+}
+.dtl a:hover{
+    text-decoration: none;
+}
+input{
+    list-style-type: none;
+    outline:none;
+    width: 100%;
+    height: 40px;
+    padding-left: 10px;
+    border: 1px solid #E6E6E6;
+}
+input:focus {  outline: none;
+    border: 1px solid #E6E6E6;
+}
+.info{
+    margin-top: 30px;
+}
+.info select{
+    height: 40px;
+    width:150px;
+    border:1px solid #E4E4E4;
+}
+.dtl button{
+    margin-top:20px;
+    width:90px;
+    margin-right:20px;
+}
+.sub{
+    background-color:#00AEFF;
+    height:40px;
+    border:1px solid #00AEFF;
+}
+.sub:hover{
+    background-color: #03A5ED;
+    border-color: #03A5ED;
+}
+.cancel{
+    height:40px;
+}
+.cancel:hover{
+    background-color:#D1D1D1;
+    height:40px;
+    border:1px solid #D1D1D1;
+}
+/************部分主题**************/
+.main_title{
+    margin-top:30px;
+    margin-bottom: 30px;
+
+}

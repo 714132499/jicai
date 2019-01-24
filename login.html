@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>用户注册</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/login.css">
+    <script  src="js/jquery-1.11.2.min.js" type="text/javascript"></script>
+    <script  type="text/javascript" src="js/bootstrap.js"></script>
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+<body>
+    <!---------------------导航------------------------------------->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <img  class="pull-left" src="images/index/logo.png" alt="">
+            <ul class="pull-right login">
+                <li class="pull-right register">
+                    <span>已有账号,</span>
+                    <a href="register.html">直接登录</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+        <!-----------------主题内容----------------------------->
+    <div class="container main_title">
+        <h3>欢迎注册</h3>
+        <span>多款接口免费试用</span>
+    </div>
+    <div class="container">
+        <div class="row ctn">
+            <div class="">
+                <div class="form-group has-feedback lists">
+                    <div class="form-group has-feedback">
+                        <input type="text"  id="username" name="username" placeholder="用户名(6-24位字母数字)">
+                        <span id="n"></span>
+                    </div>
+                </div>
+                <div class="form-group has-feedback">
+                    <div>
+                        <input type="password"  id="pwd" name="password" placeholder="密码">
+                        <span id="d"></span>
+                    </div>
+                </div>
+                <div class="form-group has-feedback">
+                    <div>
+                        <input type="password"  id="phone" name="password" placeholder="手机号码">
+                        <span id="rs"></span>
+                    </div>
+                </div>
+                <div class="form-group has-feedback">
+                    <div class="cods">
+                        <input class="cod" type="password"  class="cod_name" id="cod" name="cod_name" placeholder="请输入验证码">
+                        <button  href="javascript:;" type="button" class="btn  register btn-primary" onclick="sends.send();" type="button">获取验证码</button>
+                        <span id="r"></span>
+                    </div>
+                </div>
+                <div class="form-group has-feedback jump" style="display:none;">
+                    <div class="rad">
+                        <input type="radio" value="" checked="checked">
+                        <span class="span_lf">恭喜你注册成功</span> <span class="span_rt">3秒后自动跳转登录</span>
+                    </div>
+                </div>
+                <div class="form-group has-feedback">
+                    <div class="check">
+                        <input type="checkbox" value="" checked="checked">
+                        <span>我已阅读并接受</span> <span class="about">《聚合用户服务协议》</span>
+                    </div>
+                </div>
+            </div>
+            <button type="button" class="btn submit btn-primary">立即注册</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+    <script>
+        /**************************导航条**************************************/
+        $("div#tab li").click(function(){
+            // 获取点击的是第几个按钮
+            //var i = $(this).index();
+            //alert(i);
+            // 把原来选中的取消选中状态
+            // 把原来选中的取消选中状态
+            $(".tabs-front").removeClass("tabs-front").addClass("tabs-back");
+            // 切换点击的按钮的样式为选中状态
+            $(this).removeClass("tabs-back").addClass("tabs-front");
+        });
+    /***************************注册验证************************************/
+    var  verify_code;
+    /*****************************用户名验证***************************************/
+        $('#username').blur(function(){
+            var username = document.getElementById('username').value;
+            var regpwd =/^[0-9a-zA-Z_]{6,24}$/;; //正则表达式
+            //2：检测密码格式是否正确
+            if(username==''){
+                document.getElementById("n").innerHTML="用户名不能为空！";
+                return;
+            }else if(!regpwd.test(username)){
+                document.getElementById("n").innerHTML="用户名格式不正确";
+            }else{
+                document.getElementById("n").innerHTML="";
+                return;
+            }
+
+        });
+    /*******************************手机号验证*************************************/
+    document.getElementById("phone").onblur=function(){
+        var phone=document.getElementById("phone").value ;
+        var reg =/^[1][3,4,5,7,8,]\d{9}$/;
+        if(phone==''){
+            document.getElementById("rs").innerHTML="请输入电话号码！";
+            return;
+        }else if(!reg.test(phone)){
+            document.getElementById("rs").innerHTML="电话号码不正确！";
+            return;
+
+        }else{
+            document.getElementById("rs").innerHTML="";
+        }
+
+    };
+    /*****************************密码验证***************************************/
+    document.getElementById("pwd").onblur=function(){
+        var password = document.getElementById('pwd').value;
+        var regpwd =/^(?![0-9]+$)(?![a-zA-Z]+$)[0-9A-Za-z]{6,16}$/; //正则表达式
+        //2：检测密码格式是否正确
+        if(password==''){
+            document.getElementById("d").innerHTML="密码不能为空！";
+            return;
+        }else if(!regpwd.test(password)){
+            document.getElementById("d").innerHTML="密码格式不正确";
+        }else{
+            document.getElementById("d").innerHTML="";
+            return;
+        }
+
+    };
+    /***************************验证码***********************************/
+        //获取验证码
+   /* var sends = {
+            checked:1,
+            send:function() {
+                var time = 30;
+
+
+                $('.div-phone span').remove();
+                function timeCountDown() {
+                    if (time == 0) {
+                        clearInterval(timer);
+                        $('.btt').addClass('send1').removeClass('send0').html("重新发送验证码");
+                        sends.checked=1;
+                        return false;
+                    }
+                    $('.btt').html(time + "S后再次发送");
+                    time--;
+                }
+
+                $('.btt').addClass('send0').removeClass('send1');
+                var phone = $("#phone").val();
+                var id="30691";
+                var myKey="aca7bdc787f6f15014be509b20aa0052";
+
+                var cod=tim();
+                verify_code =cod;
+                var ctn="#code#="+cod;
+                //ctn=encodeURI(ctn);
+                ctn=encodeURIComponent(ctn);
+                alert(ctn);
+                var ctnStr='';
+                var tempArr=ctn.split('#');
+                for(var i=0;i<tempArr.length;i++){
+                    ctnStr+=encodeURI(tempArr[i]);
+                }
+                /*$.ajax({
+                    type: "get",
+                    url: "http://v.juhe.cn/sms/send?key=aca7bdc787f6f15014be509b20aa0052&mobile="+phone+"&tpl_id="+id+"&tpl_value="+ctn,
+                    async: true,
+                    dataType: "json",
+                    error: function(data){
+                        console.log(data);
+                    },
+                    success:  function(data){
+                        console.log(data);
+                    },
+                });*/
+            //   $.getJSON("http://v.juhe.cn/sms/send?key=aca7bdc787f6f15014be509b20aa0052&mobile="+phone+"&tpl_id="+id+"&tpl_value="+ctn +"&callback=?",function(data){
+                   // JSON.stringify(data);
+              //  });
+               // var timer = setInterval(timeCountDown, 1000);
+
+
+           // }
+       // };
+        //校验验证码
+      /*  document.getElementById('cod').onblur=function(){
+            var cod = $(".cod_name").val();
+            alert(cod);
+            alert(verify_code);
+            //var verifyCode = document.getElementById("verify").value;
+            if(cod==verify_code){
+                alert(1);
+                var i=$("div#tabbody-div .bt ").index(this);
+                console.log(i);
+               // color(i);
+                $(".ph").hide(1000);
+                $(".table_content2").show(1000);
+            }else if(cod==''){
+                alert(11);
+                document.getElementById("r").innerHTML="验证码不能为空！";
+            }else{
+                document.getElementById("r").innerHTML="验证码错误！";
+            }
+
+        };
+    /*****************验证码比对*******************************/
+     /*   function cods(){
+            return Math.floor(Math.random()*9+1);
+        }
+        function tim(){
+            str="";
+            for(var i=0;i<6;i++){
+                str+=cods();
+
+            }
+            return str;
+        }*/
+    </script>
+</html>
+
